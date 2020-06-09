@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.graphics.PixelFormat;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -36,6 +37,8 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
 
+        getIntent();
+
         String cmdLine = updateUnityCommandLineArguments(getIntent().getStringExtra("unity"));
         getIntent().putExtra("unity", cmdLine);
 
@@ -52,9 +55,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     // When Unity player quited kill process
     @Override public void onUnityPlayerQuitted() {
         //Process.killProcess(Process.myPid());
-        onPause();
-        Intent intent1 = new Intent(this, MainActivity.class);
-        startActivity(intent1);
+        //finish();
     }
 
     @Override protected void onNewIntent(Intent intent)
@@ -70,7 +71,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     // Quit Unity
     @Override protected void onDestroy ()
     {
-        mUnityPlayer.destroy();
+        //mUnityPlayer.destroy();
         super.onDestroy();
     }
 

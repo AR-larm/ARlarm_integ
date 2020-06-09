@@ -1,7 +1,10 @@
 package com.unity3d.player;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +17,7 @@ public class AlarmActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm);
-
+        getIntent();
         // 알람음 재생
         this.mediaPlayer = MediaPlayer.create(this, R.raw.alarm2);
         this.mediaPlayer.start();
@@ -49,6 +52,9 @@ public class AlarmActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v.getId() == R.id.btnClose) {// 알람 종료
                 close();
+                Intent intent2 = new Intent(getApplicationContext(), UnityPlayerActivity.class);
+                intent2.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent2);
             }
         }
     };

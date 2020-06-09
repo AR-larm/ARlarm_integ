@@ -39,7 +39,8 @@ public class AlarmService extends Service {
         }
 
         // 알람창 호출
-        Intent intent1 = new Intent(this, UnityPlayerActivity.class);
+        Intent intent1 = new Intent(this, MainActivity.class);
+        intent1.putExtra("AlarmStart", "Y");
         // 새로운 TASK 를 생성해서 Activity 를 최상위로 올림
         intent1.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent1);

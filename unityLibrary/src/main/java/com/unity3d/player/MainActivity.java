@@ -1,6 +1,7 @@
 package com.unity3d.player;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent2= getIntent();
+        try{
+            if(intent2.getExtras().getString("AlarmStart").equals("Y")){
+                Intent intent3 = new Intent(this, AlarmActivity.class);
+                startActivity(intent3);
+            }
+        }catch (Exception e){
+            Log.e("Exception", e.getMessage());
+        }
 
         mContext=getApplicationContext();
         // DB 추가하기 (기존에 있는 DB활용)

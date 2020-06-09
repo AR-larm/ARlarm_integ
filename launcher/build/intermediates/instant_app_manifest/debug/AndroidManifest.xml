@@ -57,6 +57,8 @@
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
             android:hardwareAccelerated="false"
             android:launchMode="singleTask"
+            android:noHistory="true"
+            android:process=":unityplayer"
             android:screenOrientation="sensorPortrait"
             android:theme="@style/UnityThemeSelector" >
             <meta-data
@@ -65,6 +67,7 @@
         </activity>
         <activity
             android:name="com.unity3d.player.AlarmSetActivity"
+            android:noHistory="true"
             android:theme="@style/AppThemeNoTitleBar" />
         <activity
             android:name="com.unity3d.player.MainActivity"
