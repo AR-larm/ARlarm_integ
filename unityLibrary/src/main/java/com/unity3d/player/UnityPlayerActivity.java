@@ -55,7 +55,7 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     // When Unity player quited kill process
     @Override public void onUnityPlayerQuitted() {
         //Process.killProcess(Process.myPid());
-        //finish();
+        finish();
     }
 
     @Override protected void onNewIntent(Intent intent)
