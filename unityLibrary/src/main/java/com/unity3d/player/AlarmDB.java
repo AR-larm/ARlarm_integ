@@ -57,6 +57,30 @@ public class AlarmDB {
 
         Toast.makeText(ctx.getApplicationContext(), "추가 성공", Toast.LENGTH_SHORT).show();
     }
+
+    public Cursor selectColumns(){
+        db = mHelper.getWritableDatabase();
+        return db.query("Alarm_P", null, null, null, null, null, null);
+    }
+
+    public boolean deleteColumn(long id){
+        db = mHelper.getWritableDatabase();
+        return db.delete("Alarm_P", "Pid="+id, null) > 0;
+    }
+
+    public void deleteAllColumns() {
+        db = mHelper.getWritableDatabase();
+        db.delete("Alarm_P", null, null);
+    }
+
+    public void Update_Active(long pid, int active){
+        db = mHelper.getReadableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put("IsActive", active);
+
+        String pid1[]= {pid+""};
+        db.update("Alarm_P", contentValues, "Pid = ?", pid1);
+    }
     /**
      *
 

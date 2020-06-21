@@ -14,17 +14,23 @@ import com.gun0912.tedpermission.TedPermission;
 
 import java.util.ArrayList;
 
+
 public class IntroActivity extends AppCompatActivity {
     public static int ACTION_MANAGE_OVERLAY_PERMISSION_REQUEST_CODE = 1;
     public static int MY_PERMISSIONS_REQUEST_READ_CONTACTS =1;
     PermissionListener permissionListener;
+
+    public static AlarmDB pdb;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro);
-
         ImageView imageView1 = (ImageView) findViewById(R.id.imageView1);
         imageView1.setImageResource(R.drawable.intro);
+
+
+        pdb = new AlarmDB(this);
+        //pdb.deleteAllColumns();
 
         if(Build.VERSION.SDK_INT>=29){
             permissionListener = new PermissionListener() {

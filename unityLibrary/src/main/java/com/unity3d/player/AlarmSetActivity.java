@@ -18,10 +18,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
+import static com.unity3d.player.IntroActivity.pdb;
+
 public class AlarmSetActivity extends AppCompatActivity {
 
     private View view;
-    AlarmDB pdb;
     Context mContext;
 
     private Calendar calendar;
@@ -161,6 +162,8 @@ public class AlarmSetActivity extends AppCompatActivity {
         // Toast 보여주기 (알람 시간 표시)
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
         Toast.makeText(getApplicationContext(), "Alarm : " + format.format(calendar.getTime()), Toast.LENGTH_LONG).show();
+
+
     }
 
     View.OnClickListener mClickListener = new View.OnClickListener() {
@@ -168,6 +171,10 @@ public class AlarmSetActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v.getId() == R.id.btnAlarm) {// 알람 등록
                 setAlarm();
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+                intent2.putExtra("alarm_addition", "complete");
+                startActivity(intent2);
+
                 Log.d("SetAlarm", "completed");
             }else{
                 Log.d("SetAlarm", "failed");

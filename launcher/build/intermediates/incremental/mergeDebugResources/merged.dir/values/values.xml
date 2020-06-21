@@ -308,6 +308,13 @@
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="iconText">#e4f9f5</color>
+    <color name="ksw_md_ripple_checked">#33019285</color>
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_solid_checked">#019285</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
     <color name="material_blue_grey_800">#ff37474f</color>
     <color name="material_blue_grey_900">#ff263238</color>
     <color name="material_blue_grey_950">#ff21272b</color>
@@ -503,6 +510,14 @@
     <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
     <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_offset">2dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_size">21dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_solid_size">20dp</dimen>
     <item format="float" name="material_emphasis_disabled" type="dimen">0.38</item>
     <item format="float" name="material_emphasis_high_type" type="dimen">0.87</item>
     <item format="float" name="material_emphasis_medium" type="dimen">0.6</item>
@@ -937,26 +952,26 @@
     <item name="android:windowExitAnimation">@anim/mtrl_bottom_sheet_slide_out</item>
   </style>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-            
+            <!-- Customize your theme here. -->
 
             <item name="colorPrimary" ns2:ignore="DuplicateDefinition">@color/colorPrimary</item>
             <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
             <item name="colorAccent">@color/colorAccent</item>
-            
+            <!-- No Title Bar Setting 20.05.23 -->
             <item name="windowActionBar">false</item>
             <item name="windowNoTitle">true</item>
 
             <item name="colorPrimary" ns2:ignore="DuplicateDefinition">@color/ARlarm_blue</item>
             <item name="colorPrimaryVariant">@color/ARlarm_lightblue</item>
             <item name="colorAccent" ns2:ignore="DuplicateDefinition">@color/ARlarm_lightorange</item>
-            
+            <!-- No Title Bar-->
             <item name="windowActionBar" ns2:ignore="DuplicateDefinition">false</item>
             <item name="windowNoTitle" ns2:ignore="DuplicateDefinition">true</item>
 
 
         </style>
     <style name="AppThemeNoTitleBar" parent="Theme.AppCompat.Light.DarkActionBar">
-        
+        <!-- No Title Bar-->
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -3134,6 +3149,23 @@
     <style name="ShapeAppearanceOverlay.TopRightDifferentCornerSize">
     <item name="cornerSizeTopRight">20px</item>
   </style>
+    <style name="SwitchButtonMD" ns2:ignore="ResourceName">
+		<item name="kswThumbDrawable">@drawable/ksw_md_thumb</item>
+		<item name="kswBackColor">@color/ksw_md_back_color</item>
+		<item name="kswThumbRangeRatio">1.45</item>
+		<item name="kswThumbMarginLeft">-16dp</item>
+		<item name="kswThumbMarginTop">-14dp</item>
+		<item name="kswThumbMarginRight">-16dp</item>
+		<item name="kswThumbMarginBottom">-14dp</item>
+		<item name="kswThumbWidth">@dimen/ksw_md_thumb_ripple_size</item>
+		<item name="kswThumbHeight">@dimen/ksw_md_thumb_ripple_size</item>
+	</style>
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
     <style name="Test.ShapeAppearanceOverlay.MaterialComponents.MaterialCalendar.Day" parent="">
     <item name="cornerFamily">rounded</item>
     <item name="cornerSize">@dimen/test_mtrl_calendar_day_cornerSize</item>
@@ -6437,6 +6469,7 @@
         
         <attr name="android:drawable"/>
     </declare-styleable>
+    <declare-styleable name="SwitchButton"><attr format="reference" name="kswThumbDrawable"/><attr format="color|reference" name="kswThumbColor"/><attr format="dimension|reference" name="kswThumbMargin"/><attr format="dimension|reference" name="kswThumbMarginTop"/><attr format="dimension|reference" name="kswThumbMarginBottom"/><attr format="dimension|reference" name="kswThumbMarginLeft"/><attr format="dimension|reference" name="kswThumbMarginRight"/><attr format="dimension|reference" name="kswThumbWidth"/><attr format="dimension|reference" name="kswThumbHeight"/><attr format="dimension|reference" name="kswThumbRadius"/><attr format="dimension|reference" name="kswBackRadius"/><attr format="reference" name="kswBackDrawable"/><attr format="color|reference" name="kswBackColor"/><attr format="boolean" name="kswFadeBack"/><attr format="float" name="kswThumbRangeRatio"/><attr format="integer" name="kswAnimationDuration"/><attr format="color|reference" name="kswTintColor"/><attr format="string" name="kswTextOn"/><attr format="string" name="kswTextOff"/><attr format="dimension" name="kswTextThumbInset"/><attr format="dimension" name="kswTextExtra"/><attr format="dimension" name="kswTextAdjust"/></declare-styleable>
     <declare-styleable name="SwitchCompat">
         
         <attr name="android:thumb"/>

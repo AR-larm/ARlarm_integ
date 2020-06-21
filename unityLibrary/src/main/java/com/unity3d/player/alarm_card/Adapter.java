@@ -47,12 +47,12 @@ public class Adapter extends PagerAdapter {
 
         imageView = view.findViewById(R.id.image);
         title = view.findViewById(R.id.title);
-        desc = view.findViewById(R.id.desc);
+        //desc = view.findViewById(R.id.desc);
 //        button = view.findViewById(R.id.btnSet2);
 
         imageView.setImageResource(models.get(position).getImage());
         title.setText(models.get(position).getTitle());
-        desc.setText(models.get(position).getDesc());
+        //desc.setText(models.get(position).getDesc());
 //        button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

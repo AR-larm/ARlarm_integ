@@ -25,6 +25,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+import static com.unity3d.player.sa_TabFragment_Alarm.alarmListAdapter;
+
 public class MainActivity extends AppCompatActivity {
 
     //private TabLayout mTabLayout;
@@ -151,6 +153,18 @@ public class MainActivity extends AppCompatActivity {
 //        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 //        fragmentTransaction.add(R.id.viewpager, TabFragment_AlarmSet.newinstance()).commit();
 
+        Intent intent3 = getIntent();
+        try {
+            String msg = intent3.getExtras().getString("alarm_addition");
+            if (msg.equals("complete")) {
+                Log.d("Added", "complete");
+                mViewPager.setCurrentItem(1);
+                bottomNavigationView.getMenu().findItem(R.id.action_Alarm).setChecked(true);
+                alarmListAdapter.notifyDataSetChanged();
+            }
+        }catch (NullPointerException e){
+
+        }
     }
 
     public void replaceFragment(Fragment fragment) {

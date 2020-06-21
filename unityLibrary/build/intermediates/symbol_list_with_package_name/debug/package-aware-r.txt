@@ -416,6 +416,28 @@ attr itemTextAppearanceActive
 attr itemTextAppearanceInactive
 attr itemTextColor
 attr keylines
+attr kswAnimationDuration
+attr kswBackColor
+attr kswBackDrawable
+attr kswBackRadius
+attr kswFadeBack
+attr kswTextAdjust
+attr kswTextExtra
+attr kswTextOff
+attr kswTextOn
+attr kswTextThumbInset
+attr kswThumbColor
+attr kswThumbDrawable
+attr kswThumbHeight
+attr kswThumbMargin
+attr kswThumbMarginBottom
+attr kswThumbMarginLeft
+attr kswThumbMarginRight
+attr kswThumbMarginTop
+attr kswThumbRadius
+attr kswThumbRangeRatio
+attr kswThumbWidth
+attr kswTintColor
 attr labelColor
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
@@ -878,6 +900,14 @@ color highlighted_text_material_light
 color hint_foreground_material_dark
 color hint_foreground_material_light
 color iconText
+color ksw_md_back_color
+color ksw_md_ripple_checked
+color ksw_md_ripple_normal
+color ksw_md_solid_checked
+color ksw_md_solid_checked_disable
+color ksw_md_solid_disable
+color ksw_md_solid_normal
+color ksw_md_solid_shadow
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1135,6 +1165,14 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
+dimen ksw_md_thumb_ripple_size
+dimen ksw_md_thumb_shadow_inset
+dimen ksw_md_thumb_shadow_inset_bottom
+dimen ksw_md_thumb_shadow_inset_top
+dimen ksw_md_thumb_shadow_offset
+dimen ksw_md_thumb_shadow_size
+dimen ksw_md_thumb_solid_inset
+dimen ksw_md_thumb_solid_size
 dimen material_emphasis_disabled
 dimen material_emphasis_high_type
 dimen material_emphasis_medium
@@ -1465,6 +1503,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable header_rectangle2
 drawable ic_access_alarm_black_24dp
 drawable ic_assessment_black_24dp
 drawable ic_calendar_black_24dp
@@ -1490,6 +1529,7 @@ drawable ic_tabicon_sysset
 drawable img_plus
 drawable img_weathericonexample
 drawable intro
+drawable ksw_md_thumb
 drawable main_tabiconcolor
 drawable main_tabindicator
 drawable mtrl_dialog_background
@@ -1601,32 +1641,15 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
-id alarm_ampm
 id alarm_ampm1
-id alarm_ampm2
-id alarm_day
 id alarm_day1
-id alarm_day2
-id alarm_onoffbtn
-id alarm_onoffbtn1
-id alarm_onoffbtn2
-id alarm_sub1
+id alarm_recyclerview
 id alarm_sub11
 id alarm_sub12
-id alarm_sub2
-id alarm_sub21
-id alarm_sub22
-id alarm_time
 id alarm_time1
-id alarm_time2
-id alarm_timeleft
 id alarm_timeleft1
-id alarm_timeleft2
-id alarm_title
 id alarm_title1
-id alarm_title2
 id alarm_viewpager
-id alarms
 id alertTitle
 id always
 id async
@@ -1639,7 +1662,6 @@ id btnAlarm
 id btnCalendar
 id btnClose
 id btnSet
-id btnSet2
 id btnWeek1
 id btnWeek2
 id btnWeek3
@@ -1673,7 +1695,6 @@ id dark
 id date_picker_actions
 id decor_content_parent
 id default_activity_button
-id desc
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -1692,6 +1713,8 @@ id fill
 id filled
 id fixed
 id forever
+id game1
+id game2
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1740,6 +1763,7 @@ id info_weathertempur
 id invisible
 id isSuper
 id italic
+id item_layout
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
@@ -1815,6 +1839,7 @@ id sa_main_tab
 id sa_viewpager
 id save_non_transition_alpha
 id save_overlay_view
+id sb_use_listener
 id scale
 id screen
 id scrollIndicatorDown
@@ -1899,6 +1924,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id weekofDay_tv
 id wide
 id withText
 id wrap
@@ -2475,6 +2501,8 @@ style ShapeAppearance_MaterialComponents_LargeComponent
 style ShapeAppearance_MaterialComponents_MediumComponent
 style ShapeAppearance_MaterialComponents_SmallComponent
 style ShapeAppearance_MaterialComponents_Test
+style SwitchButtonMD
+style SwitchButtonStyle
 style TestStyleWithLineHeight
 style TestStyleWithLineHeightAppearance
 style TestStyleWithThemeLineHeightAttribute
@@ -2968,6 +2996,7 @@ styleable SnackbarLayout actionTextColorAlpha android_maxWidth animationMode bac
 styleable Spinner android_dropDownWidth android_entries android_popupBackground android_prompt popupTheme
 styleable StateListDrawable android_constantSize android_dither android_enterFadeDuration android_exitFadeDuration android_variablePadding android_visible
 styleable StateListDrawableItem android_drawable
+styleable SwitchButton kswAnimationDuration kswBackColor kswBackDrawable kswBackRadius kswFadeBack kswTextAdjust kswTextExtra kswTextOff kswTextOn kswTextThumbInset kswThumbColor kswThumbDrawable kswThumbHeight kswThumbMargin kswThumbMarginBottom kswThumbMarginLeft kswThumbMarginRight kswThumbMarginTop kswThumbRadius kswThumbRangeRatio kswThumbWidth kswTintColor
 styleable SwitchCompat android_textOff android_textOn android_thumb showText splitTrack switchMinWidth switchPadding switchTextAppearance thumbTextPadding thumbTint thumbTintMode track trackTint trackTintMode
 styleable SwitchMaterial useMaterialThemeColors
 styleable TabItem android_icon android_layout android_text

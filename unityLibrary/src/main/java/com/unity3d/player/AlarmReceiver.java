@@ -7,15 +7,17 @@ import android.icu.util.Calendar;
 import android.os.Build;
 import android.util.Log;
 
+import static com.unity3d.player.IntroActivity.pdb;
+
 public class AlarmReceiver extends BroadcastReceiver {
-    AlarmDB  pdb;
+
     Context context;
 
     @Override
     public void onReceive(Context context, Intent intent) {
 
         Intent sIntent = new Intent(context, AlarmService.class);
-        pdb = new AlarmDB(context); // SizerDB 연동 클래스 인스턴스
+        //pdb = new AlarmDB(context); // SizerDB 연동 클래스 인스턴스
 
         /**
          * 만약 켜져 있는 알람이 아니라면 자동 종료 되도록 설정,
