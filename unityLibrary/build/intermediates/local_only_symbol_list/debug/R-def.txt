@@ -12,6 +12,7 @@ color ARlarm_grey6
 color ARlarm_lightblue
 color ARlarm_lightorange
 color ARlarm_white
+color background
 color color1
 color color2
 color color3
@@ -19,10 +20,15 @@ color color4
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
+color iconText
 drawable brochure
+drawable ic_access_alarm_black_24dp
+drawable ic_assessment_black_24dp
+drawable ic_event_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_plus
+drawable ic_settings_black_24dp
 drawable ic_tabicon_alarm
 drawable ic_tabicon_info
 drawable ic_tabicon_stats
@@ -48,6 +54,10 @@ font spoqahansans_light
 font spoqahansans_regular
 font spoqahansans_thin
 id Tag
+id action_Alarm
+id action_Information
+id action_Statistic
+id action_Syssetting
 id alarm_ampm
 id alarm_ampm1
 id alarm_ampm2
@@ -74,6 +84,7 @@ id alarm_title1
 id alarm_title2
 id alarm_viewpager
 id alarms
+id bottom_navigation
 id btnAlarm
 id btnCalendar
 id btnClose
@@ -149,6 +160,7 @@ layout tab_fragment_alarmset
 layout tab_fragment_info
 layout tab_fragment_setting
 layout tab_fragment_statistic
+menu bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
 raw alarm

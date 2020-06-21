@@ -12,6 +12,7 @@
     <color name="ARlarm_lightblue">#BBBDFF</color>
     <color name="ARlarm_lightorange">#FFBB71</color>
     <color name="ARlarm_white">#FFFFFF</color>
+    <color name="background">#11999e</color>
     <color name="color1">#424549</color>
     <color name="color2">#7e455e</color>
     <color name="color3">#796e25</color>
@@ -19,6 +20,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
+    <color name="iconText">#e4f9f5</color>
     <string name="app_name">ALARM</string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
@@ -31,26 +33,26 @@
     <string name="sync_title">Sync email periodically</string>
     <string name="title_activity_settings">Settings</string>
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-            <!-- Customize your theme here. -->
+            
 
             <item name="colorPrimary" ns1:ignore="DuplicateDefinition">@color/colorPrimary</item>
             <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
             <item name="colorAccent">@color/colorAccent</item>
-            <!-- No Title Bar Setting 20.05.23 -->
+            
             <item name="windowActionBar">false</item>
             <item name="windowNoTitle">true</item>
 
             <item name="colorPrimary" ns1:ignore="DuplicateDefinition">@color/ARlarm_blue</item>
             <item name="colorPrimaryVariant">@color/ARlarm_lightblue</item>
             <item name="colorAccent" ns1:ignore="DuplicateDefinition">@color/ARlarm_lightorange</item>
-            <!-- No Title Bar-->
+            
             <item name="windowActionBar" ns1:ignore="DuplicateDefinition">false</item>
             <item name="windowNoTitle" ns1:ignore="DuplicateDefinition">true</item>
 
 
         </style>
     <style name="AppThemeNoTitleBar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- No Title Bar-->
+        
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>

@@ -786,6 +786,7 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
+color background
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -869,6 +870,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color iconText
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -1442,9 +1444,12 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_access_alarm_black_24dp
+drawable ic_assessment_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_event_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1456,6 +1461,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_plus
+drawable ic_settings_black_24dp
 drawable ic_tabicon_alarm
 drawable ic_tabicon_info
 drawable ic_tabicon_stats
@@ -1554,6 +1560,10 @@ id accessibility_custom_action_7
 id accessibility_custom_action_8
 id accessibility_custom_action_9
 id action0
+id action_Alarm
+id action_Information
+id action_Statistic
+id action_Syssetting
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -1611,6 +1621,7 @@ id barrier
 id beginning
 id blocking
 id bottom
+id bottom_navigation
 id btnAlarm
 id btnCalendar
 id btnClose
@@ -2054,6 +2065,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+menu bottom_navigation
 mipmap app_icon
 mipmap app_icon_round
 mipmap ic_launcher

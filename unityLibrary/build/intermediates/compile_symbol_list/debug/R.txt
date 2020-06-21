@@ -790,6 +790,7 @@ int color abc_tint_spinner 0x0
 int color abc_tint_switch_track 0x0
 int color accent_material_dark 0x0
 int color accent_material_light 0x0
+int color background 0x0
 int color background_floating_material_dark 0x0
 int color background_floating_material_light 0x0
 int color background_material_dark 0x0
@@ -875,6 +876,7 @@ int color highlighted_text_material_dark 0x0
 int color highlighted_text_material_light 0x0
 int color hint_foreground_material_dark 0x0
 int color hint_foreground_material_light 0x0
+int color iconText 0x0
 int color material_blue_grey_800 0x0
 int color material_blue_grey_900 0x0
 int color material_blue_grey_950 0x0
@@ -1462,9 +1464,12 @@ int drawable design_password_eye 0x0
 int drawable design_snackbar_background 0x0
 int drawable googleg_disabled_color_18 0x0
 int drawable googleg_standard_color_18 0x0
+int drawable ic_access_alarm_black_24dp 0x0
+int drawable ic_assessment_black_24dp 0x0
 int drawable ic_calendar_black_24dp 0x0
 int drawable ic_clear_black_24dp 0x0
 int drawable ic_edit_black_24dp 0x0
+int drawable ic_event_black_24dp 0x0
 int drawable ic_keyboard_arrow_left_black_24dp 0x0
 int drawable ic_keyboard_arrow_right_black_24dp 0x0
 int drawable ic_launcher_background 0x0
@@ -1476,6 +1481,7 @@ int drawable ic_mtrl_chip_checked_black 0x0
 int drawable ic_mtrl_chip_checked_circle 0x0
 int drawable ic_mtrl_chip_close_circle 0x0
 int drawable ic_plus 0x0
+int drawable ic_settings_black_24dp 0x0
 int drawable ic_tabicon_alarm 0x0
 int drawable ic_tabicon_info 0x0
 int drawable ic_tabicon_stats 0x0
@@ -1568,6 +1574,10 @@ int id accessibility_custom_action_7 0x0
 int id accessibility_custom_action_8 0x0
 int id accessibility_custom_action_9 0x0
 int id action0 0x0
+int id action_Alarm 0x0
+int id action_Information 0x0
+int id action_Statistic 0x0
+int id action_Syssetting 0x0
 int id action_bar 0x0
 int id action_bar_activity_content 0x0
 int id action_bar_container 0x0
@@ -1623,6 +1633,7 @@ int id auto 0x0
 int id beginning 0x0
 int id blocking 0x0
 int id bottom 0x0
+int id bottom_navigation 0x0
 int id btnAlarm 0x0
 int id btnCalendar 0x0
 int id btnClose 0x0
@@ -2046,6 +2057,7 @@ int layout text_view_with_line_height_from_layout 0x0
 int layout text_view_with_line_height_from_style 0x0
 int layout text_view_with_theme_line_height 0x0
 int layout text_view_without_line_height 0x0
+int menu bottom_navigation 0x0
 int mipmap ic_launcher 0x0
 int mipmap ic_launcher_round 0x0
 int plurals mtrl_badge_content_description 0x0

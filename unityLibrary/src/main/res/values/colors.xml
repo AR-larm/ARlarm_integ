@@ -25,4 +25,8 @@
     <color name="color3">#796e25</color>
     <color name="color4">#59717c</color>
 
+    <!-- NavigationView Color-->
+    <color name="iconText">#e4f9f5</color>
+    <color name="background">#11999e</color>
+
 </resources>

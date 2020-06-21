@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -13,6 +15,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
 
 import java.io.BufferedInputStream;
@@ -24,10 +27,12 @@ import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TabLayout mTabLayout;
+    //private TabLayout mTabLayout;
     private ViewPager mViewPager;
     private MainPagerAdapter mPageAdapter;
     private Context mContext;
+
+    private BottomNavigationView bottomNavigationView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -59,7 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        mTabLayout = findViewById(R.id.sa_main_tab);
+        bottomNavigationView = findViewById(R.id.bottom_navigation);
+
+        //mTabLayout = findViewById(R.id.sa_main_tab);
         mViewPager = findViewById(R.id.sa_viewpager);
 
 
@@ -74,6 +81,54 @@ public class MainActivity extends AppCompatActivity {
         mPageAdapter = new MainPagerAdapter(getSupportFragmentManager());
         mViewPager.setAdapter(mPageAdapter);
 
+        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                switch (position) {
+                    case 0:
+                        bottomNavigationView.getMenu().findItem(R.id.action_Information).setChecked(true);
+                        break;
+                    case 1:
+                        bottomNavigationView.getMenu().findItem(R.id.action_Alarm).setChecked(true);
+                        break;
+                    case 2:
+                        bottomNavigationView.getMenu().findItem(R.id.action_Statistic).setChecked(true);
+                        break;
+                    case 3:
+                        bottomNavigationView.getMenu().findItem(R.id.action_Syssetting).setChecked(true);
+                        break;
+                }
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.action_Information) {
+                    mViewPager.setCurrentItem(0);
+                }else if(item.getItemId() == R.id.action_Alarm){
+                    mViewPager.setCurrentItem(1);
+                }else if(item.getItemId() == R.id.action_Statistic){
+                    mViewPager.setCurrentItem(2);
+                }else if(item.getItemId() == R.id.action_Syssetting){
+                    mViewPager.setCurrentItem(3);
+                }
+                return true;
+            }
+        });
+
+
+        /*
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(mTabLayout));
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
@@ -91,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+         */
         //시작 프래그먼트 설정가능
 //        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 //        fragmentTransaction.add(R.id.viewpager, TabFragment_AlarmSet.newinstance()).commit();

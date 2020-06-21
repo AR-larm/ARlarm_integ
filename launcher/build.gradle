@@ -31,7 +31,7 @@ android {
         targetSdkVersion 29
         applicationId 'com.DefaultCompany.ARlarm_U'
         ndk {
-            abiFilters 'armeabi-v7a'
+            //abiFilters 'armeabi-v7a'
         }
         versionCode 1
         versionName '0.1'
