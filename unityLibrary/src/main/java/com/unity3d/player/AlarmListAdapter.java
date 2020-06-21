@@ -3,6 +3,7 @@ package com.unity3d.player;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Build;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.CompoundButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -107,6 +109,27 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.View
                         });
                 builder.show();
                 return false;
+            }
+        });
+
+        holder.item_layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(mContext, AlarmSetActivity.class);
+                intent3.putExtra("UpdateAlarm", "update");
+
+                String alarm_hour = Alarm_TimeH_HM.get(Alarm_id_List.get(position));
+                String alarm_minute = Alarm_TimeM_HM.get(Alarm_id_List.get(position));
+                String alarm_week= Alarm_weekofday_HM.get(Alarm_id_List.get(position));
+                String alarm_isSuper = Alarm_IsSuper_HM.get(Alarm_id_List.get(position));
+
+                intent3.putExtra("A_Hour", alarm_hour);
+                intent3.putExtra("A_Minute", alarm_minute);
+                intent3.putExtra("A_Week", alarm_week);
+                intent3.putExtra("A_isSuper", alarm_isSuper);
+                intent3.putExtra("A_pid", Alarm_id_List.get(position));
+
+                mContext.startActivity(intent3);
             }
         });
 

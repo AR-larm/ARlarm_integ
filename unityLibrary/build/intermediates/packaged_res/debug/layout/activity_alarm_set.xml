@@ -11,7 +11,9 @@
         android:id="@+id/timePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        />
+        android:scaleType="fitXY"
+        android:theme="@style/TimePickerStyle"
+        android:timePickerMode="spinner"/>
 
     <LinearLayout
         android:orientation="horizontal"

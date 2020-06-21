@@ -57,6 +57,19 @@ public class AlarmDB {
 
         Toast.makeText(ctx.getApplicationContext(), "추가 성공", Toast.LENGTH_SHORT).show();
     }
+    public void super_update(int cid,int pid,int Hour,int IsActive,int Minute,int Week){
+        db = mHelper.getWritableDatabase();
+        db.execSQL("UPDATE Alarm_C SET update Week = "+Week+", Hour = "+Hour+", Minute = "+Minute+ "WHERE Pid = "+pid+";");
+
+        db.execSQL("INSERT INTO Alarm_C VALUES ("+Integer.toString(cid)+","+Integer.toString(pid)+","+Integer.toString(Hour)+
+                ","+Integer.toString(IsActive)+","+Integer.toString(Minute)+","+Integer.toString(Week)+ ");");
+
+        Toast.makeText(ctx.getApplicationContext(), "추가 성공", Toast.LENGTH_SHORT).show();
+    }
+    public boolean super_delete(int pid){
+        db = mHelper.getWritableDatabase();
+        return db.delete("Alarm_C", "Pid="+pid, null) > 0;
+    }
 
     public Cursor selectColumns(){
         db = mHelper.getWritableDatabase();
@@ -80,6 +93,11 @@ public class AlarmDB {
 
         String pid1[]= {pid+""};
         db.update("Alarm_P", contentValues, "Pid = ?", pid1);
+    }
+
+    public void Update(int pid,int week,int GameType,int isSuper, int Hour, int Minute){
+        db = mHelper.getWritableDatabase();
+        db.execSQL("UPDATE Alarm_P SET Week = "+week+", GameType = "+GameType+", IsSuper = "+isSuper+ ", Hour = "+Hour+", Minute = "+Minute+ " WHERE Pid = "+pid+";");
     }
     /**
      *

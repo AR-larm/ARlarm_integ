@@ -164,5 +164,6 @@ style AppTheme
 style AppThemeNoTitleBar
 style BaseUnityTheme
 style SwitchButtonStyle
+style TimePickerStyle
 style UnityThemeSelector
 style UnityThemeSelector.Translucent

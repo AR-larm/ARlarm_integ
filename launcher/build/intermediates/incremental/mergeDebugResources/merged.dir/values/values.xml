@@ -3739,6 +3739,9 @@
     <style name="ThemeOverlayColorAccentRed" ns2:ignore="NewApi">
     <item name="android:colorAccent">#FFFF0000</item>
   </style>
+    <style name="TimePickerStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
     <style name="UnityThemeSelector" parent="BaseUnityTheme">
 	<item name="android:windowBackground">@android:color/black</item>
 </style>

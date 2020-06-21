@@ -4,7 +4,10 @@ import android.app.AlarmManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Spannable;
+import android.text.style.ForegroundColorSpan;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
@@ -16,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Locale;
 
 import static com.unity3d.player.IntroActivity.pdb;
@@ -31,7 +35,11 @@ public class AlarmSetActivity extends AppCompatActivity {
     private TimePicker timePicker;
     //public static TabFragment_Alarm
 
+    private Boolean isUpdate = false;
+
     private ToggleButton _toggleSun, _toggleMon, _toggleTue, _toggleWed, _toggleThu, _toggleFri, _toggleSat,_toggleSuper;
+
+    String A_hour, A_Minute, A_Week, A_isSuper, A_Pid;
     String strTag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +48,7 @@ public class AlarmSetActivity extends AppCompatActivity {
 
         this.calendar = Calendar.getInstance();
         // 현재 날짜 표시
-        displayDate();
+        //displayDate();
 
         this.timePicker = findViewById(R.id.timePicker);
         //Calender, 알람 버튼에 리스너 연결
@@ -59,6 +67,70 @@ public class AlarmSetActivity extends AppCompatActivity {
         _toggleFri = (ToggleButton) findViewById(R.id.btnWeek6);
         _toggleSat = (ToggleButton) findViewById(R.id.btnWeek7);
         _toggleSuper=(ToggleButton) findViewById(R.id.isSuper);
+
+        Intent intent = getIntent();try {
+            String CheckUpdate = intent.getExtras().getString("UpdateAlarm");
+            A_hour = intent.getExtras().getString("A_Hour");
+            A_Minute = intent.getExtras().getString("A_Minute");
+            A_Week = intent.getExtras().getString("A_Week");
+            A_isSuper = intent.getExtras().getString("A_isSuper");
+            A_Pid = intent.getExtras().getString("A_pid");
+            if (A_isSuper == null) {
+                A_isSuper = "0";
+            }
+            if (CheckUpdate.equals("update")) {
+                isUpdate = true;
+
+                //시간 설정
+                String temp_time = A_hour + ":" + A_Minute;
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH:mm");
+                try {
+                    Date time = simpleDateFormat.parse(temp_time);
+                    this.timePicker.setHour(time.getHours());
+                    this.timePicker.setMinute(time.getMinutes());
+                } catch (Exception e) {
+
+                }
+
+                Log.d("UisSuper", "??" + isSuper);
+                //슈퍼 설정
+                if (A_isSuper.equals("1")) {
+                    Log.d("UisSuper", "??" + isSuper);
+                    _toggleSuper.setChecked(true);
+                    _toggleSuper.setSelected(true);
+                }
+
+                try {
+                    if ((Integer.parseInt(A_Week) & (1 << 7)) != 0) {
+                        _toggleSat.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 6)) != 0) {
+                        _toggleFri.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 5)) != 0) {
+                        _toggleThu.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 4)) != 0) {
+                        _toggleWed.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 3)) != 0) {
+                        _toggleTue.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 2)) != 0) {
+                        _toggleMon.setChecked(true);
+                    }
+                    if ((Integer.parseInt(A_Week) & (1 << 1)) != 0) {
+                        _toggleSun.setChecked(true);
+                    }
+                }catch (Exception e){
+
+                }
+
+            }
+        }catch (NullPointerException e){
+
+        }
+
     }
 
     /* 날짜 표시 */
@@ -72,7 +144,6 @@ public class AlarmSetActivity extends AppCompatActivity {
         //DB실험
         mContext = getApplicationContext();
         pdb = new AlarmDB(mContext); // SizerDB 연동 클래스 인스턴스
-
 
         // 알람 시간 설정
         this.calendar.set(Calendar.HOUR_OF_DAY, this.timePicker.getHour());
@@ -132,9 +203,16 @@ public class AlarmSetActivity extends AppCompatActivity {
 
         PendingIntent pendingIntent = PendingIntent.getBroadcast(getApplicationContext(), cnt++, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
+
         //알람 DB에 저장하기
-        int pid=pdb.SelectPid()+1;
-        pdb.insert(pid,week,1,isSuper,1,strTag,1,this.timePicker.getHour(),this.timePicker.getMinute());
+        int pid;
+        if(!isUpdate) {
+            pid = pdb.SelectPid() + 1;
+            pdb.insert(pid, week, 1, isSuper, 1, strTag, 1, this.timePicker.getHour(), this.timePicker.getMinute());
+        }else{
+            pid = Integer.parseInt(A_Pid);
+            pdb.Update(pid, week, 1, isSuper, this.timePicker.getHour(), this.timePicker.getMinute());
+        }
         int[][] t=pdb.SelectTime(pdb.SelectPid());
         Log.d("AlarmDB",Integer.toString(pdb.SelectPid())+Integer.toString(t[0][0])+"요일"+Integer.toString(t[0][1])+"시"+Integer.toString(t[0][2])+"분");
         // 알은 24시간만다 반복되도록 설정
@@ -154,10 +232,13 @@ public class AlarmSetActivity extends AppCompatActivity {
             AlarmManager super_alarmManager = (AlarmManager) getSystemService(getApplicationContext().ALARM_SERVICE);
             this.calendar.add( this.calendar.MINUTE, 1 );
             super_alarmManager.set(AlarmManager.RTC_WAKEUP, this.calendar.getTimeInMillis(),super_pendingIntent);
+        }/*
+        else{
+            if(A_isSuper.equals("1")){
+                pdb.super_delete(pid);
+            }
         }
-
-
-
+        */
 
         // Toast 보여주기 (알람 시간 표시)
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
@@ -171,6 +252,7 @@ public class AlarmSetActivity extends AppCompatActivity {
         public void onClick(View v) {
             if (v.getId() == R.id.btnAlarm) {// 알람 등록
                 setAlarm();
+
                 Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
                 intent2.putExtra("alarm_addition", "complete");
                 startActivity(intent2);
