@@ -76,7 +76,7 @@ public class IntroActivity extends AppCompatActivity {
                 .setPermissionListener(permissionlistener)
                 //.setDeniedMessage("If you reject permission,you can not use this service\n\nPlease turn on permissions at [Setting] > [Permission]")
                 .setDeniedMessage("권한을 허용하지 않으시면 앱을 정상적으로 사용할 수 없습니다.\n\n권한을 허용하고 싶으시면 [설정] > [권한] 을 통해 승인해주세요.")
-                .setPermissions(Manifest.permission.SYSTEM_ALERT_WINDOW, Manifest.permission.ACCESS_FINE_LOCATION)
+                .setPermissions(Manifest.permission.SYSTEM_ALERT_WINDOW, Manifest.permission.ACCESS_FINE_LOCATION, Manifest.permission.CAMERA)
                 .check();
     }
 }
