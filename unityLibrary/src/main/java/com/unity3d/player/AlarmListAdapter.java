@@ -123,6 +123,7 @@ public class AlarmListAdapter extends RecyclerView.Adapter<AlarmListAdapter.View
                 String alarm_week= Alarm_weekofday_HM.get(Alarm_id_List.get(position));
                 String alarm_isSuper = Alarm_IsSuper_HM.get(Alarm_id_List.get(position));
 
+                intent3.putExtra("A_Position", position);
                 intent3.putExtra("A_Hour", alarm_hour);
                 intent3.putExtra("A_Minute", alarm_minute);
                 intent3.putExtra("A_Week", alarm_week);

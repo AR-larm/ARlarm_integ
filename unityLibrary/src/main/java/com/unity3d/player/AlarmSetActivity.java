@@ -23,6 +23,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import static com.unity3d.player.IntroActivity.pdb;
+import static com.unity3d.player.sa_TabFragment_Alarm.alarmListAdapter;
 
 public class AlarmSetActivity extends AppCompatActivity {
 
@@ -40,6 +41,7 @@ public class AlarmSetActivity extends AppCompatActivity {
     private ToggleButton _toggleSun, _toggleMon, _toggleTue, _toggleWed, _toggleThu, _toggleFri, _toggleSat,_toggleSuper;
 
     String A_hour, A_Minute, A_Week, A_isSuper, A_Pid;
+    int A_Position;
     String strTag;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +55,7 @@ public class AlarmSetActivity extends AppCompatActivity {
         this.timePicker = findViewById(R.id.timePicker);
         //Calender, 알람 버튼에 리스너 연결
         findViewById(R.id.btnAlarm).setOnClickListener(mClickListener);
+        findViewById(R.id.btnDelete).setOnClickListener(mClickListener);
 
         //태그 추가
         EditText editText1 = (EditText) findViewById(R.id.Tag) ;
@@ -70,6 +73,7 @@ public class AlarmSetActivity extends AppCompatActivity {
 
         Intent intent = getIntent();try {
             String CheckUpdate = intent.getExtras().getString("UpdateAlarm");
+            A_Position=intent.getExtras().getInt("A_Position");
             A_hour = intent.getExtras().getString("A_Hour");
             A_Minute = intent.getExtras().getString("A_Minute");
             A_Week = intent.getExtras().getString("A_Week");
@@ -150,11 +154,7 @@ public class AlarmSetActivity extends AppCompatActivity {
         this.calendar.set(Calendar.MINUTE, this.timePicker.getMinute());
         this.calendar.set(Calendar.SECOND, 0);
 
-        // 현재일보다 이전이면 등록 실패
-        if (this.calendar.before(Calendar.getInstance())) {
-            Toast.makeText(getApplicationContext(), "알람시간이 현재시간보다 이전일 수 없습니다.", Toast.LENGTH_LONG).show();
-            return;
-        }
+
 
         /**
          요일 추가하는거(레이아웃 완성되면 추가 할 부분), 비트 연산으로 해당 요일값 추가
@@ -258,7 +258,23 @@ public class AlarmSetActivity extends AppCompatActivity {
                 startActivity(intent2);
 
                 Log.d("SetAlarm", "completed");
-            }else{
+            }
+            else if(v.getId()==R.id.btnDelete)
+            {
+                Log.d("yeong pid",A_Pid);
+
+                int pid = Integer.parseInt(A_Pid);
+                pdb.deleteColumn(pid);
+                alarmListAdapter.notifyItemRemoved(A_Position);
+                alarmListAdapter.notifyDataSetChanged();
+
+                Intent intent2 = new Intent(getApplicationContext(), MainActivity.class);
+                intent2.putExtra("alarm_delete", "complete");
+                startActivity(intent2);
+
+
+            }
+            else{
                 Log.d("SetAlarm", "failed");
             }
         }

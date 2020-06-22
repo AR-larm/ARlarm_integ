@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\miger\\StudioProjects\\ARlarm_integ\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-bs\\values-bs.xml",
+            "outputFile": "/Users/leeyeonghyeon/Desktop/SKKU/globalcapstone/Integrated/launcher/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bs/values-bs.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\09b19aacd70d1e85f051dd42a8a4b20d\\jetified-arcore_client\\res\\values-bs\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8",
-                        "startColumns": "0,0,0,0,0",
-                        "startOffsets": "190,237,287,406,527",
-                        "endColumns": "46,49,118,120,82",
-                        "endOffsets": "236,286,405,526,609"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6",
-                        "startColumns": "4,4,4,4,4",
-                        "startOffsets": "105,156,210,333,458",
-                        "endColumns": "50,53,122,124,86",
-                        "endOffsets": "151,205,328,453,540"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\ef8a364a6a39421e69c96cf68eeb3e63\\appcompat-1.1.0\\res\\values-bs\\values-bs.xml",
+                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/ef8a364a6a39421e69c96cf68eeb3e63/appcompat-1.1.0/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,7 +21,24 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\34b4ab0d8b65ac74ddd00d45b26dd963\\core-1.1.0\\res\\values-bs\\values-bs.xml",
+                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/09b19aacd70d1e85f051dd42a8a4b20d/jetified-arcore_client/res/values-bs/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,237,287,406,527",
+                        "endColumns": "46,49,118,120,82",
+                        "endOffsets": "236,286,405,526,609"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "105,156,210,333,458",
+                        "endColumns": "50,53,122,124,86",
+                        "endOffsets": "151,205,328,453,540"
+                    }
+                },
+                {
+                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/34b4ab0d8b65ac74ddd00d45b26dd963/core-1.1.0/res/values-bs/values-bs.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -55,7 +55,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\4e1d39b0502a76c1f711be06c8feceb5\\jetified-play-services-basement-15.0.1\\res\\values-bs\\values.xml",
+                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/6a4aceab14f8f4272f9e3ebdab0b52f5/jetified-play-services-basement-15.0.1/res/values-bs/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\4ac4659ed379bcbd8266f5abf7ee5604\\jetified-play-services-base-15.0.1\\res\\values-bs\\values.xml",
+                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/dc104d4bc193aa10ffc8381de9581655/jetified-play-services-base-15.0.1/res/values-bs/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

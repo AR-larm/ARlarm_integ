@@ -165,6 +165,20 @@ public class MainActivity extends AppCompatActivity {
         }catch (NullPointerException e){
 
         }
+
+        try {
+            String msg = intent3.getExtras().getString("alarm_delete");
+            if (msg.equals("complete")) {
+                Log.d("delete", "complete");
+                mViewPager.setCurrentItem(1);
+                bottomNavigationView.getMenu().findItem(R.id.action_Alarm).setChecked(true);
+                alarmListAdapter.notifyDataSetChanged();
+            }
+        }catch (NullPointerException e){
+
+        }
+
+
     }
 
     public void replaceFragment(Fragment fragment) {
