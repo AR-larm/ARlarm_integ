@@ -8,253 +8,256 @@
 8
 9    <uses-sdk
 10        android:minSdkVersion="24"
-10-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml
+10-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml
 11        android:targetSdkVersion="29" />
-11-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml
+11-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml
 12
 13    <supports-screens
-13-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:3-163
+13-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:3-163
 14        android:anyDensity="true"
-14-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:135-160
+14-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:135-160
 15        android:largeScreens="true"
-15-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:78-105
+15-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:78-105
 16        android:normalScreens="true"
-16-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:49-77
+16-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:49-77
 17        android:smallScreens="true"
-17-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:21-48
+17-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:21-48
 18        android:xlargeScreens="true" />
-18-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:4:106-134
+18-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:4:106-134
 19
 20    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-20-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
-20-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
+20-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-77
+20-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-74
 21    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-21-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-79
-21-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-76
+21-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-79
+21-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-76
 22    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-22-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
-22-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-78
+22-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-81
+22-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-78
 23    <uses-permission android:name="android.permission.INTERNET" />
-23-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
-23-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-64
+23-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
+23-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-64
 24    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-24-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-78
-24-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-75
+24-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-78
+24-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-75
 25    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />
-25-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-91
-25-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:22-88
-26
-27    <uses-feature android:glEsVersion="0x00020000" />
-27-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-54
-27-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:19-51
-28
-29    <uses-permission android:name="android.permission.CAMERA" />
-29-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-65
-29-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-62
-30    <uses-permission android:name="android.permission.INTERNET" />
-30-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
-30-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-64
-31    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
-31-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:5-86
-31-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:22-83
-32
-33    <uses-feature
-33-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:5-28:36
-34        android:name="android.hardware.touchscreen"
-34-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-52
-35        android:required="false" />
-35-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-33
-36    <uses-feature
-36-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:5-31:36
-37        android:name="android.hardware.touchscreen.multitouch"
-37-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-63
-38        android:required="false" />
-38-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:9-33
-39    <uses-feature
-39-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:5-34:36
-40        android:name="android.hardware.touchscreen.multitouch.distinct"
-40-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-72
-41        android:required="false" />
-41-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-33
-42    <uses-feature
-42-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:9:5-11:35
-43        android:name="android.hardware.camera.ar"
-43-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:10:9-50
-44        android:required="true" />
-44-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:11:9-32
-45
-46    <application
-46-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:5:3-109
-47        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-47-->[androidx.core:core:1.1.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
-48        android:debuggable="true"
-49        android:extractNativeLibs="false"
-50        android:icon="@mipmap/app_icon"
-50-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:5:49-80
-51        android:label="@string/app_name"
-51-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:5:16-48
-52        android:supportsRtl="true"
-52-->C:\Users\user\ARlarm_U_exported3\launcher\src\main\AndroidManifest.xml:5:81-107
-53        android:testOnly="true" >
-54        <activity
-54-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:9-49:20
-55            android:name="com.unity3d.player.UnityPlayerActivity"
-55-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-66
-56            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-56-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-194
-57            android:hardwareAccelerated="false"
-57-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-48
-58            android:launchMode="singleTask"
-58-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-44
-59            android:noHistory="true"
-59-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
-60            android:process=":unityplayer"
-60-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-43
-61            android:screenOrientation="sensorPortrait"
-61-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-55
-62            android:theme="@style/UnityThemeSelector" >
-62-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-54
-63            <meta-data
-63-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-48:40
-64                android:name="unityplayer.UnityActivity"
-64-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:17-57
-65                android:value="true" />
-65-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:17-37
-66        </activity>
-67        <activity
-67-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:9-53:57
-68            android:name="com.unity3d.player.AlarmSetActivity"
-68-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-63
-69            android:noHistory="true"
-69-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-37
-70            android:theme="@style/AppThemeNoTitleBar" />
-70-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:13-54
-71        <activity
-71-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:9-56:57
-72            android:name="com.unity3d.player.MainActivity"
-72-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:13-59
-73            android:theme="@style/AppThemeNoTitleBar" />
-73-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-54
-74        <activity
-74-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:9-65:20
-75            android:name="com.unity3d.player.IntroActivity"
-75-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:13-60
-76            android:theme="@style/AppThemeNoTitleBar" >
-76-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-54
-77            <intent-filter>
-77-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-64:29
-78                <action android:name="android.intent.action.MAIN" />
-78-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:17-69
-78-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:25-66
-79
-80                <category android:name="android.intent.category.LAUNCHER" />
-80-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:17-77
-80-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:27-74
-81            </intent-filter>
-82        </activity>
-83        <activity
-83-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:9-68:57
-84            android:name="com.unity3d.player.AlarmActivity"
-84-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-60
-85            android:theme="@style/AppThemeNoTitleBar" />
-85-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-54
-86
-87        <receiver
-87-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:9-73:40
-88            android:name="com.unity3d.player.AlarmReceiver"
-88-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:13-60
-89            android:enabled="true"
-89-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-35
-90            android:exported="false" />
-90-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:13-37
-91
-92        <service
-92-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:9-77:38
-93            android:name="com.unity3d.player.AlarmService"
-93-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:13-59
-94            android:enabled="true" />
-94-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:13-35
-95
-96        <meta-data
-96-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:9-81:36
-97            android:name="unity.tango-enable"
-97-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:13-46
-98            android:value="True" />
-98-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-33
-99        <meta-data
-99-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:9-84:36
-100            android:name="unityplayer.SkipPermissionsDialog"
-100-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:13-61
-101            android:value="true" />
-101-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-33
-102        <meta-data
-102-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:9-87:33
-103            android:name="unity.splash-mode"
-103-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:13-45
-104            android:value="0" />
-104-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-30
-105        <meta-data
-105-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:9-90:36
-106            android:name="unity.splash-enable"
-106-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:13-47
-107            android:value="True" />
-107-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:13-33
-108        <meta-data
-108-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:9-93:68
-109            android:name="unity.build-id"
-109-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:13-42
-110            android:value="330e9e1b-c651-4215-a04f-e2f684b6cb79" />
-110-->[:unityLibrary] C:\Users\user\ARlarm_U_exported3\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:13-65
-111
-112        <activity
-112-->[gun0912.ted:tedpermission:2.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\63c6760eb3de3451b34769bf5e5f4335\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
-113            android:name="com.gun0912.tedpermission.TedPermissionActivity"
-113-->[gun0912.ted:tedpermission:2.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\63c6760eb3de3451b34769bf5e5f4335\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75
-114            android:theme="@style/Theme.Transparent.Permission" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
-114-->[gun0912.ted:tedpermission:2.0.0] C:\Users\user\.gradle\caches\transforms-2\files-2.1\63c6760eb3de3451b34769bf5e5f4335\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
-115        <meta-data
-115-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:33:9-35:41
-116            android:name="com.google.ar.core.min_apk_version"
-116-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:34:13-62
-117            android:value="191220000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
-117-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:35:13-38
-118        <activity
-118-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:37:9-43:80
-119            android:name="com.google.ar.core.InstallActivity"
-119-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:38:13-62
-120            android:configChanges="keyboardHidden|orientation|screenSize"
-120-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:39:13-74
-121            android:excludeFromRecents="true"
-121-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:40:13-46
-122            android:exported="false"
-122-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:41:13-37
-123            android:launchMode="singleTop"
-123-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:42:13-43
-124            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
-124-->[:arcore_client:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:43:13-77
-125
-126        <meta-data
-126-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:14:9-16:40
-127            android:name="com.google.ar.core"
-127-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:15:13-46
-128            android:value="required" />
-128-->[:google_ar_required:] C:\Users\user\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:16:13-37
-129
-130        <activity
-130-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\fa4a5302cb75ed6883d758ec7019201a\jetified-play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
-131            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-131-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\fa4a5302cb75ed6883d758ec7019201a\jetified-play-services-base-15.0.1\AndroidManifest.xml:24:13-79
-132            android:exported="false"
-132-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\fa4a5302cb75ed6883d758ec7019201a\jetified-play-services-base-15.0.1\AndroidManifest.xml:25:13-37
-133            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-133-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\fa4a5302cb75ed6883d758ec7019201a\jetified-play-services-base-15.0.1\AndroidManifest.xml:26:13-72
-134
-135        <meta-data
-135-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\6bd129d8f10044e9a70f15b3dca8c0a3\jetified-play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
-136            android:name="com.google.android.gms.version"
-136-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\6bd129d8f10044e9a70f15b3dca8c0a3\jetified-play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
-137            android:value="@integer/google_play_services_version" />
-137-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\user\.gradle\caches\transforms-2\files-2.1\6bd129d8f10044e9a70f15b3dca8c0a3\jetified-play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
-138    </application>
-139
-140</manifest>
+25-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-91
+25-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:22-88
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-65
+26-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:22-62
+27
+28    <uses-feature android:glEsVersion="0x00020000" />
+28-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:5-54
+28-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:19-51
+29
+30    <uses-permission android:name="android.permission.CAMERA" />
+30-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-65
+30-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:22-62
+31    <uses-permission android:name="android.permission.INTERNET" />
+31-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-67
+31-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-64
+32    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+32-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-86
+32-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:22-83
+33
+34    <uses-feature
+34-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:5-29:36
+35        android:name="android.hardware.touchscreen"
+35-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-52
+36        android:required="false" />
+36-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-33
+37    <uses-feature
+37-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:5-32:36
+38        android:name="android.hardware.touchscreen.multitouch"
+38-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:9-63
+39        android:required="false" />
+39-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:9-33
+40    <uses-feature
+40-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:5-35:36
+41        android:name="android.hardware.touchscreen.multitouch.distinct"
+41-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:9-72
+42        android:required="false" />
+42-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:9-33
+43    <uses-feature
+43-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:9:5-11:35
+44        android:name="android.hardware.camera.ar"
+44-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:10:9-50
+45        android:required="true" />
+45-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:11:9-32
+46
+47    <application
+47-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:5:3-109
+48        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+48-->[androidx.core:core:1.1.0] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\34b4ab0d8b65ac74ddd00d45b26dd963\core-1.1.0\AndroidManifest.xml:24:18-86
+49        android:debuggable="true"
+50        android:extractNativeLibs="false"
+51        android:icon="@mipmap/app_icon"
+51-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:5:49-80
+52        android:label="@string/app_name"
+52-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:5:16-48
+53        android:supportsRtl="true"
+53-->C:\Users\miger\StudioProjects\ARlarm_integ\launcher\src\main\AndroidManifest.xml:5:81-107
+54        android:testOnly="true" >
+55        <activity
+55-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:9-50:20
+56            android:name="com.unity3d.player.UnityPlayerActivity"
+56-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-66
+57            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+57-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-194
+58            android:hardwareAccelerated="false"
+58-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-48
+59            android:launchMode="singleTask"
+59-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44
+60            android:noHistory="true"
+60-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-37
+61            android:process=":unityplayer"
+61-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-43
+62            android:screenOrientation="sensorPortrait"
+62-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:13-55
+63            android:theme="@style/UnityThemeSelector" >
+63-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-54
+64            <meta-data
+64-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-49:40
+65                android:name="unityplayer.UnityActivity"
+65-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:17-57
+66                android:value="true" />
+66-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:17-37
+67        </activity>
+68        <activity
+68-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:9-54:57
+69            android:name="com.unity3d.player.AlarmSetActivity"
+69-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-63
+70            android:noHistory="true"
+70-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:53:13-37
+71            android:theme="@style/AppThemeNoTitleBar" />
+71-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:54:13-54
+72        <activity
+72-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:9-57:57
+73            android:name="com.unity3d.player.MainActivity"
+73-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-59
+74            android:theme="@style/AppThemeNoTitleBar" />
+74-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:13-54
+75        <activity
+75-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:9-66:20
+76            android:name="com.unity3d.player.IntroActivity"
+76-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-60
+77            android:theme="@style/AppThemeNoTitleBar" >
+77-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-54
+78            <intent-filter>
+78-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-65:29
+79                <action android:name="android.intent.action.MAIN" />
+79-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:17-69
+79-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:25-66
+80
+81                <category android:name="android.intent.category.LAUNCHER" />
+81-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:17-77
+81-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:27-74
+82            </intent-filter>
+83        </activity>
+84        <activity
+84-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-69:57
+85            android:name="com.unity3d.player.AlarmActivity"
+85-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-60
+86            android:theme="@style/AppThemeNoTitleBar" />
+86-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-54
+87
+88        <receiver
+88-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:9-74:40
+89            android:name="com.unity3d.player.AlarmReceiver"
+89-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-60
+90            android:enabled="true"
+90-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:13-35
+91            android:exported="false" />
+91-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:13-37
+92
+93        <service
+93-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:9-78:38
+94            android:name="com.unity3d.player.AlarmService"
+94-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:13-59
+95            android:enabled="true" />
+95-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-35
+96
+97        <meta-data
+97-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:9-82:36
+98            android:name="unity.tango-enable"
+98-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-46
+99            android:value="True" />
+99-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-33
+100        <meta-data
+100-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:9-85:36
+101            android:name="unityplayer.SkipPermissionsDialog"
+101-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:84:13-61
+102            android:value="true" />
+102-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:85:13-33
+103        <meta-data
+103-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:86:9-88:33
+104            android:name="unity.splash-mode"
+104-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:87:13-45
+105            android:value="0" />
+105-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:88:13-30
+106        <meta-data
+106-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:89:9-91:36
+107            android:name="unity.splash-enable"
+107-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:90:13-47
+108            android:value="True" />
+108-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:91:13-33
+109        <meta-data
+109-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:92:9-94:68
+110            android:name="unity.build-id"
+110-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:93:13-42
+111            android:value="330e9e1b-c651-4215-a04f-e2f684b6cb79" />
+111-->[:unityLibrary] C:\Users\miger\StudioProjects\ARlarm_integ\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:94:13-65
+112
+113        <activity
+113-->[gun0912.ted:tedpermission:2.0.0] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\7fd7dd8e2c5d7a4d858d0e3aa43e45dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:10:9-12:67
+114            android:name="com.gun0912.tedpermission.TedPermissionActivity"
+114-->[gun0912.ted:tedpermission:2.0.0] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\7fd7dd8e2c5d7a4d858d0e3aa43e45dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:11:13-75
+115            android:theme="@style/Theme.Transparent.Permission" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+115-->[gun0912.ted:tedpermission:2.0.0] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\7fd7dd8e2c5d7a4d858d0e3aa43e45dc\jetified-tedpermission-2.0.0\AndroidManifest.xml:12:13-64
+116        <meta-data
+116-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:33:9-35:41
+117            android:name="com.google.ar.core.min_apk_version"
+117-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:34:13-62
+118            android:value="191220000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+118-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:35:13-38
+119        <activity
+119-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:37:9-43:80
+120            android:name="com.google.ar.core.InstallActivity"
+120-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:38:13-62
+121            android:configChanges="keyboardHidden|orientation|screenSize"
+121-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:39:13-74
+122            android:excludeFromRecents="true"
+122-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:40:13-46
+123            android:exported="false"
+123-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:41:13-37
+124            android:launchMode="singleTop"
+124-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:42:13-43
+125            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+125-->[:arcore_client:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\09b19aacd70d1e85f051dd42a8a4b20d\jetified-arcore_client\AndroidManifest.xml:43:13-77
+126
+127        <meta-data
+127-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:14:9-16:40
+128            android:name="com.google.ar.core"
+128-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:15:13-46
+129            android:value="required" />
+129-->[:google_ar_required:] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\b6f3202af4e8d17d51c7d7cd710badca\jetified-google_ar_required\AndroidManifest.xml:16:13-37
+130
+131        <activity
+131-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4ac4659ed379bcbd8266f5abf7ee5604\jetified-play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
+132            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+132-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4ac4659ed379bcbd8266f5abf7ee5604\jetified-play-services-base-15.0.1\AndroidManifest.xml:24:13-79
+133            android:exported="false"
+133-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4ac4659ed379bcbd8266f5abf7ee5604\jetified-play-services-base-15.0.1\AndroidManifest.xml:25:13-37
+134            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+134-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4ac4659ed379bcbd8266f5abf7ee5604\jetified-play-services-base-15.0.1\AndroidManifest.xml:26:13-72
+135
+136        <meta-data
+136-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4e1d39b0502a76c1f711be06c8feceb5\jetified-play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
+137            android:name="com.google.android.gms.version"
+137-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4e1d39b0502a76c1f711be06c8feceb5\jetified-play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
+138            android:value="@integer/google_play_services_version" />
+138-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miger\.gradle\caches\transforms-2\files-2.1\4e1d39b0502a76c1f711be06c8feceb5\jetified-play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
+139    </application>
+140
+141</manifest>
