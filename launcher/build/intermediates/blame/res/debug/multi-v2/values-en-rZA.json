@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/leeyeonghyeon/Desktop/SKKU/globalcapstone/Integrated/launcher/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rZA/values-en-rZA.xml",
+            "outputFile": "C:\\Users\\miger\\StudioProjects\\ARlarm_integ5\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rZA\\values-en-rZA.xml",
             "map": [
                 {
-                    "source": "/Users/leeyeonghyeon/.gradle/caches/transforms-2/files-2.1/09b19aacd70d1e85f051dd42a8a4b20d/jetified-arcore_client/res/values-en-rZA/values.xml",
+                    "source": "C:\\Users\\miger\\.gradle\\caches\\transforms-2\\files-2.1\\09b19aacd70d1e85f051dd42a8a4b20d\\jetified-arcore_client\\res\\values-en-rZA\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8",
                         "startColumns": "0,0,0,0,0",

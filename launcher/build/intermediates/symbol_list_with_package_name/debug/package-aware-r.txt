@@ -601,6 +601,10 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr seriesColor
+attr seriesData
+attr seriesTitle
+attr seriesType
 attr shapeAppearance
 attr shapeAppearanceLargeComponent
 attr shapeAppearanceMediumComponent
@@ -1719,6 +1723,7 @@ id game2
 id ghost_view
 id ghost_view_holder
 id gone
+id graph
 id group_divider
 id groups
 id header_button
@@ -1741,10 +1746,20 @@ id info_masktitle1
 id info_masktitle2
 id info_masktitle3
 id info_news
+id info_news2
+id info_news3
 id info_newsbody
+id info_newsbody2
+id info_newsbody3
 id info_newsimg
+id info_newsimg2
+id info_newsimg3
 id info_newsmore
+id info_newsmore2
+id info_newsmore3
 id info_newstitle
+id info_newstitle2
+id info_newstitle3
 id info_saju
 id info_sajubody
 id info_sajuimg
@@ -2959,6 +2974,7 @@ styleable FontFamilyFont android_font android_fontWeight android_fontStyle andro
 styleable ForegroundLinearLayout android_foreground android_foregroundGravity foregroundInsidePadding
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable GraphViewXML android_title seriesColor seriesData seriesTitle seriesType
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight

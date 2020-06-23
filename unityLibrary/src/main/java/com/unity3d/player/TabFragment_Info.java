@@ -52,10 +52,11 @@ public class TabFragment_Info extends Fragment {
     private LocationRequest mLocationRequest;
     private Location location = new Location("Weather");
     private String temperature = "";
-    private TextView infoWeatherTemp, infoMaskTitle1, infoMaskBody1, infoMaskTitle2,
+    private TextView infoWeatherTemp, infoPlace, infoMaskTitle1, infoMaskBody1, infoMaskTitle2,
             infoMaskBody2, infoMaskTitle3, infoMaskBody3;
     private long UPDATE_INTERVAL = 10 * 1000;  /* 10 secs */
     private long FASTEST_INTERVAL = 2000; /* 2 sec */
+    private int global_idx = 0;
 
     private static final String WEATHER_API_KEY = "5412590d46f72f52ec77c78bfe8951f1";
     private static final String NEWS_API_KEY = "e2093652e1aa43088baa69468713b523";
@@ -81,7 +82,7 @@ public class TabFragment_Info extends Fragment {
     public synchronized void getLastLocation(Context context) {
         // Get last known recent location using new Google Play Services SDK (v11+)
         FusedLocationProviderClient locationClient = getFusedLocationProviderClient(context);
-        System.out.println("HEllo WOrldd Locxation");
+        System.out.println("Hello World Location");
         if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
             //    ActivityCompat#requestPermissions
@@ -103,7 +104,7 @@ public class TabFragment_Info extends Fragment {
                             location.set(_location);
                             System.out.println("AAA" + location.getLatitude() + " " + location.getLongitude());
                             AsyncHttpClient client = new AsyncHttpClient();
-                            setWeather(client, location.getLatitude(), location.getLongitude(), infoWeatherTemp);
+                            setWeather(client, location.getLatitude(), location.getLongitude(), infoWeatherTemp, infoPlace);
 
                             TextView[] infoMaskTitleArr = {infoMaskTitle1, infoMaskTitle2, infoMaskTitle3};
                             TextView[] infoMaskBodyArr = {infoMaskBody1, infoMaskBody2, infoMaskBody3,};
@@ -143,18 +144,34 @@ public class TabFragment_Info extends Fragment {
         getLastLocation(context);
 
         infoWeatherTemp = (TextView) view.findViewById((R.id.info_weathertempur));
-
+        infoPlace = (TextView) view.findViewById(R.id.info_weatherplace);
         AsyncHttpClient client = new AsyncHttpClient();
         // Current News to display
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
 
+        global_idx = 0;
+
         LinearLayout infoNews = (LinearLayout) view.findViewById(R.id.info_news);
         TextView infoNewsTitle = (TextView) view.findViewById((R.id.info_newstitle));
         TextView infoNewsBody = (TextView) view.findViewById((R.id.info_newsbody));
         AppCompatImageView infoNewsImg = (AppCompatImageView) view.findViewById((R.id.info_newsimg));
-        setNews(client, infoNews, infoNewsTitle, infoNewsBody, infoNewsImg);
+        setNews(client, infoNews, infoNewsTitle, infoNewsBody, infoNewsImg, global_idx);
+
+        LinearLayout infoNews2 = (LinearLayout) view.findViewById(R.id.info_news2);
+        TextView infoNewsTitle2 = (TextView) view.findViewById((R.id.info_newstitle2));
+        TextView infoNewsBody2 = (TextView) view.findViewById((R.id.info_newsbody2));
+        AppCompatImageView infoNewsImg2 = (AppCompatImageView) view.findViewById((R.id.info_newsimg2));
+        setNews(client, infoNews2, infoNewsTitle2, infoNewsBody2, infoNewsImg2, global_idx+1);
+
+        LinearLayout infoNews3 = (LinearLayout) view.findViewById(R.id.info_news3);
+        TextView infoNewsTitle3 = (TextView) view.findViewById((R.id.info_newstitle3));
+        TextView infoNewsBody3 = (TextView) view.findViewById((R.id.info_newsbody3));
+        AppCompatImageView infoNewsImg3 = (AppCompatImageView) view.findViewById((R.id.info_newsimg3));
+        setNews(client, infoNews3, infoNewsTitle3, infoNewsBody3, infoNewsImg3, global_idx+2);
+
+
 
         // Set Mask info
         infoMaskTitle1 = (TextView) view.findViewById((R.id.info_masktitle1));
@@ -213,7 +230,7 @@ public class TabFragment_Info extends Fragment {
         });
     }
 
-    private synchronized void setNews(AsyncHttpClient client, final LinearLayout infoNews, final TextView infoNewsTitle, final TextView infoNewsBody, final AppCompatImageView infoNewsImg){
+    private synchronized void setNews(AsyncHttpClient client, final LinearLayout infoNews, final TextView infoNewsTitle, final TextView infoNewsBody, final AppCompatImageView infoNewsImg, int i){
 
         client.get(generateNewsUrl(), new JsonHttpResponseHandler() {
             @SuppressLint("SetTextI18n")
@@ -224,14 +241,16 @@ public class TabFragment_Info extends Fragment {
                 try {
                     // Get Json Array
                     JSONArray main = response.getJSONArray("articles");
+
                     // Image Set
-                    URL url = new URL(main.getJSONObject(0).getString("urlToImage"));
+                    URL url = new URL(main.getJSONObject(i).getString("urlToImage"));
                     Bitmap bmp = BitmapFactory.decodeStream(url.openConnection().getInputStream());
                     infoNewsImg.setImageBitmap(bmp);
+
                     // Description Set
-                    infoNewsBody.setText(main.getJSONObject(0).getString("description").substring(0, 19)+"...");
+                    infoNewsBody.setText(main.getJSONObject(i).getString("description").substring(0, 19)+"...");
                     // Title Set
-                    infoNewsTitle.setText(main.getJSONObject(0).getString("title").substring(0, 20)+"...");
+                    infoNewsTitle.setText(main.getJSONObject(i).getString("title").substring(0, 20)+"...");
                     class NewsOnClickListener implements View.OnClickListener
                     {
 
@@ -249,18 +268,24 @@ public class TabFragment_Info extends Fragment {
                         }
 
                     };
-                    infoNews.setOnClickListener(new NewsOnClickListener(main.getJSONObject(0).getString("url")));
+                    infoNews.setOnClickListener(new NewsOnClickListener(main.getJSONObject(i).getString("url")));
+                    //global_idx++;
+
                     } catch (JSONException | MalformedURLException e) {
                     Log.d("", "ERROR");
+                    global_idx++;
+                    setNews(client, infoNews, infoNewsTitle, infoNewsBody, infoNewsImg, global_idx);
                 } catch (IOException e) {
                     e.printStackTrace();
+                    global_idx++;
+                    setNews(client, infoNews, infoNewsTitle, infoNewsBody, infoNewsImg, global_idx);
                 }
             }
 
         });
     }
 
-    private synchronized void setWeather(AsyncHttpClient client, Double latitude, Double longitude, final TextView infoWeatherTemp){
+    private synchronized void setWeather(AsyncHttpClient client, Double latitude, Double longitude, final TextView infoWeatherTemp, final TextView infoPlace){
         System.out.println("BBB"+location);
         client.get(generateWeatherUrl(latitude, longitude), new JsonHttpResponseHandler() {
             @SuppressLint("SetTextI18n")

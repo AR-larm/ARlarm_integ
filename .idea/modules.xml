@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ARlarm_integ.iml" filepath="$PROJECT_DIR$/ARlarm_integ.iml" group="ARlarm_integ" />
-      <module fileurl="file://$PROJECT_DIR$/launcher/launcher.iml" filepath="$PROJECT_DIR$/launcher/launcher.iml" group="ARlarm_integ/launcher" />
-      <module fileurl="file://$PROJECT_DIR$/unityLibrary/unityLibrary.iml" filepath="$PROJECT_DIR$/unityLibrary/unityLibrary.iml" group="ARlarm_integ/unityLibrary" />
+      <module fileurl="file://$PROJECT_DIR$/ARlarm_integ5.iml" filepath="$PROJECT_DIR$/ARlarm_integ5.iml" group="ARlarm_integ5" />
+      <module fileurl="file://$PROJECT_DIR$/launcher/launcher.iml" filepath="$PROJECT_DIR$/launcher/launcher.iml" group="ARlarm_integ5/launcher" />
+      <module fileurl="file://$PROJECT_DIR$/unityLibrary/unityLibrary.iml" filepath="$PROJECT_DIR$/unityLibrary/unityLibrary.iml" group="ARlarm_integ5/unityLibrary" />
     </modules>
   </component>
 </project>

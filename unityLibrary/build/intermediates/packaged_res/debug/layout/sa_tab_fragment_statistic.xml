@@ -40,13 +40,17 @@
             android:orientation="vertical"
             android:gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="graph here"
-                android:textColor="@color/ARlarm_lightblue">
+            <com.jjoe64.graphview.GraphView
+                android:layout_width="match_parent"
+                android:layout_height="200dip"
+                android:id="@+id/graph"/>
 
-            </TextView>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="graph here"-->
+<!--                android:textColor="@color/ARlarm_lightblue">-->
+<!--            </TextView>-->
         </LinearLayout>
 
         <LinearLayout

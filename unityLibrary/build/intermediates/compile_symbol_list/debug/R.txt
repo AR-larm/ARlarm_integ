@@ -600,6 +600,10 @@ int attr searchViewStyle 0x0
 int attr seekBarStyle 0x0
 int attr selectableItemBackground 0x0
 int attr selectableItemBackgroundBorderless 0x0
+int attr seriesColor 0x0
+int attr seriesData 0x0
+int attr seriesTitle 0x0
+int attr seriesType 0x0
 int attr shapeAppearance 0x0
 int attr shapeAppearanceLargeComponent 0x0
 int attr shapeAppearanceMediumComponent 0x0
@@ -1718,6 +1722,7 @@ int id game2 0x0
 int id ghost_view 0x0
 int id ghost_view_holder 0x0
 int id gone 0x0
+int id graph 0x0
 int id group_divider 0x0
 int id header_button 0x0
 int id home 0x0
@@ -1738,10 +1743,20 @@ int id info_masktitle1 0x0
 int id info_masktitle2 0x0
 int id info_masktitle3 0x0
 int id info_news 0x0
+int id info_news2 0x0
+int id info_news3 0x0
 int id info_newsbody 0x0
+int id info_newsbody2 0x0
+int id info_newsbody3 0x0
 int id info_newsimg 0x0
+int id info_newsimg2 0x0
+int id info_newsimg3 0x0
 int id info_newsmore 0x0
+int id info_newsmore2 0x0
+int id info_newsmore3 0x0
 int id info_newstitle 0x0
+int id info_newstitle2 0x0
+int id info_newstitle3 0x0
 int id info_saju 0x0
 int id info_sajubody 0x0
 int id info_sajuimg 0x0
@@ -3536,6 +3551,12 @@ int styleable GradientColor_android_type 11
 int[] styleable GradientColorItem { 0x10101a5, 0x1010514 }
 int styleable GradientColorItem_android_color 0
 int styleable GradientColorItem_android_offset 1
+int[] styleable GraphViewXML { 0x10101e1, 0x0, 0x0, 0x0, 0x0 }
+int styleable GraphViewXML_android_title 0
+int styleable GraphViewXML_seriesColor 1
+int styleable GraphViewXML_seriesData 2
+int styleable GraphViewXML_seriesTitle 3
+int styleable GraphViewXML_seriesType 4
 int[] styleable LinearConstraintLayout { 0x10100c4 }
 int styleable LinearConstraintLayout_android_orientation 0
 int[] styleable LinearLayoutCompat { 0x1010126, 0x1010127, 0x10100af, 0x10100c4, 0x1010128, 0x0, 0x0, 0x0, 0x0 }

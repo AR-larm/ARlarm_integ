@@ -9,6 +9,11 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class AlarmActivity extends AppCompatActivity {
 
     private MediaPlayer mediaPlayer;
@@ -50,6 +55,20 @@ public class AlarmActivity extends AppCompatActivity {
     View.OnClickListener mClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+
+            //원래 눌렀을 때 해야하는데.
+            Calendar calendar = Calendar.getInstance();
+
+            try {
+                Date d1 = calendar.getTime();
+                String formedDate = new SimpleDateFormat("yy/MM/dd/HH/mm").format(d1);
+                System.out.println(formedDate);
+            }
+            catch(Exception e)
+            {
+                e.printStackTrace();
+            }
+
             if (v.getId() == R.id.btnClose) {// 알람 종료
                 close();
                 Intent intent2 = new Intent(getApplicationContext(), UnityPlayerActivity.class);
